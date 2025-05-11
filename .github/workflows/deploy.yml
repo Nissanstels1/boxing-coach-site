@@ -1,39 +1,27 @@
-name: Deploy Vite site to GitHub Pages
+name: Deploy to gh-pages
 on:
   push:
     branches: [main]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write      # нужно, чтобы пушить в gh-pages
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with: { node-version: 18 }
+
       - run: npm ci
-      - run: npm run build
-      #  Покажем, что лежит в dist
-      - run: |
-          echo "==== LIST dist (debug) ===="
-          ls -R ./dist || true
-          echo "==========================="
+      - run: npm run build          # → dist/
 
-      - uses: actions/upload-pages-artifact@v2
-        with: { path: ./dist }
-      - uses: actions/upload-pages-artifact@v2
-        with: { path: ./dist }
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v2
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
