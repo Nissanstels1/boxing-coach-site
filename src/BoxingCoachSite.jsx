@@ -39,9 +39,9 @@ export default function BoxingCoachSite() {
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 drop-shadow-lg leading-tight">
             Андрей Медведев
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light">
-            Персональный тренер по&nbsp;боксу с&nbsp;10-летним опытом. Прокачай силу,
-            технику и&nbsp;уверенность.
+          <p className="text-xl md:text-2xl mb-8 font-light mt-8">
+  Персональный тренер по&nbsp;боксу, фитнесу и&nbsp;бодибилдингу с&nbsp;огромным опытом.
+  Прокачай силу, технику и&nbsp;уверенность.
           </p>
           <button
             onClick={scrollToContact}
