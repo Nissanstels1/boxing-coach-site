@@ -40,7 +40,7 @@ export default function BoxingCoachSite() {
             Андрей Медведев
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light mt-8">
-  Персональный тренер по&nbsp;боксу, фитнесу и&nbsp;бодибилдингу с&nbsp;огромным опытом.
+  Персональный тренер по&nbsp;боксу, фитнесу и&nbsp;бодибилдингу с&nbsp;10-летним стажем.
   Прокачай силу, технику и&nbsp;уверенность.
           </p>
           <button
