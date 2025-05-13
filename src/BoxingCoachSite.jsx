@@ -40,8 +40,8 @@ export default function BoxingCoachSite() {
             Андрей Медведев
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light mt-8">
-  Персональный тренер по&nbsp;боксу, фитнесу и&nbsp;бодибилдингу с&nbsp;10-летним стажем.
-  Прокачай силу, технику и&nbsp;уверенность.
+  Персональный тренер по&nbsp;боксу, фитнесу, бодибилдингу и&nbsp;физической подготовке с&nbsp;10-летним стажем.
+Прокачай силу, технику и&nbsp;уверенность.
           </p>
           <button
             onClick={scrollToContact}
@@ -217,7 +217,7 @@ export default function BoxingCoachSite() {
             +7&nbsp;920&nbsp;526&nbsp;24&nbsp;18
           </a>
           <p className="mt-8 text-base text-gray-600">
-            Тренировки проходят в современном зале в Москве (м. Динамо) или по договорённости в удобном для вас месте.
+            Тренировки проходят в современном зале в Москве или по договорённости в удобном для вас месте.
           </p>
         </motion.div>
       </section>
