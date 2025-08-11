@@ -192,35 +192,56 @@ export default function BoxingCoachSite() {
 
       {/* ---------- CONTACT ---------- */}
       <section ref={contactRef} className="py-24 container mx-auto px-4" id="contact">
-        <motion.h2
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="text-4xl font-bold mb-8 text-center"
-        >
-          Контакты
-        </motion.h2>
+  <motion.h2
+    variants={fadeUp}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
+    className="text-4xl font-bold mb-8 text-center"
+  >
+    Контакты
+  </motion.h2>
 
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="max-w-xl mx-auto bg-gray-100 rounded-3xl p-12 shadow-2xl text-center"
-        >
-          <p className="text-xl mb-4">Телефон для записи:</p>
-          <a
-            href="tel:+79205262418"
-            className="text-3xl font-bold text-red-600 hover:underline"
-          >
-            +7&nbsp;920&nbsp;526&nbsp;24&nbsp;18
-          </a>
-          <p className="mt-8 text-base text-gray-600">
-            Тренировки проходят в современном зале в Москве или по договорённости в удобном для вас месте.
-          </p>
-        </motion.div>
-      </section>
+  <motion.div
+    variants={fadeUp}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
+    className="max-w-xl mx-auto bg-gray-100 rounded-3xl p-12 shadow-2xl text-center"
+  >
+    <p className="text-xl mb-4">Телефон для записи:</p>
+    <a
+      href="tel:+79205262418"
+      className="text-3xl font-bold text-red-600 hover:underline block"
+    >
+      +7&nbsp;920&nbsp;526&nbsp;24&nbsp;18
+    </a>
+
+    {/* Кнопки мессенджеров */}
+    <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+      <a
+        href="https://t.me/Fit_TreNer7"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-md transition"
+      >
+        Telegram
+      </a>
+      <a
+        href="https://wa.me/79205262418"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-md transition"
+      >
+        WhatsApp
+      </a>
+    </div>
+
+    <p className="mt-8 text-base text-gray-600">
+      Тренировки проходят в современном зале в Москве или по договорённости в удобном для вас месте.
+    </p>
+  </motion.div>
+</section>
 
       {/* ---------- FOOTER ---------- */}
       <footer className="py-8 text-center text-sm text-gray-500">
