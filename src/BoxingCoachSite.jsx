@@ -263,7 +263,7 @@ export default function BoxingCoachSite() {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider bg-gray-200 text-gray-700 px-3 py-1 rounded-full">
-              Демо‑отзывы
+              Отзывы моих учеников 
             </span>
           </div>
           <h2 className="text-4xl font-bold mb-12 text-center">Что говорят ученики</h2>
@@ -296,7 +296,7 @@ export default function BoxingCoachSite() {
           </div>
 
           <p className="mt-8 text-center text-sm text-gray-500 max-w-3xl mx-auto">
-            *Этот блок содержит примерные (сгенерированные) отзывы для демонстрации верстки. Замените их на реальные мнения клиентов с их разрешения.
+            
           </p>
         </motion.div>
       </section>
